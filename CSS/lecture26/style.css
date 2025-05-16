@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x:hidden;
+    background-color: transparent;
+    /* background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
+}
+.navContainer{
+    width: 100vw;
+    border-radius: 20px;
+    /* background-color: rgb(167, 186, 216); */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    min-height: 60px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+nav{
+    width: 100%;
+    overflow-x: none;
+}
+#navList{
+    width: 100%;
+    padding: 15px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    list-style: none;
+    font-size:2rem ;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+#navLogo{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#navItems{
+    display: flex;
+    gap: 40px;
+}
+.footerBox{
+    width:100% ;
+    text-align: center;
+    align-items: baseline;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(315deg, #ab3379 0%, #784BA0 50%, #2B86C5 100%);
+    margin: 3px;
+}
+.contentBox{
+    width: 50%;
+    margin: auto;
+    border: 2px black dashed;
+    box-shadow: 0px 0px 40px 25px #DBA632;
+    background-color: white;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 2rem;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rightbox{
+    position: relative;
+    /* overflow: hidden; */
+    transition: all 0.5s ease-in-out 0.1s;
+}
+.rightbox img{
+    height: 300px;
+    width: 200px;
+    border-radius: 16px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.rightbox:hover{
+    transform: scale(1.2);
+}
+.leftbox h2{
+    font-size: 2rem;
+    text-decoration: underline;
+    font-family:'Yellowtail', cursive;;
+}
+.leftbox h3{
+    font-size: 1.3rem;
+    text-decoration: underline;
+    text-decoration-style:dotted;
+    text-underline-offset: 4px;
+}
+.ing{
+    font-size: 1.1rem;
+}
+.rec{
+    font-size: 1.1rem;
+}
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    background-color: rgba(36, 34, 34,0.713);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+.rightbox:hover .overlay{
+    /* transform: scale(1.2); */
+    opacity: 1;
+}
+.rightbox .overlay span{
+    color: white;
+    font-size: 1.1rem;
+}

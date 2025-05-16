@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100vw ;
+            height: 100vh;
+            background-color: #cdd6da;
+            background-image: linear-gradient(160deg, #10678d 0%, #464963 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 500px;
+            width: 1000px;
+            background-color: #4e094c;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+        .rightbox{
+            width: 50%;
+            height: 100%;
+            background-image: url(icon.jpg);
+            background-color: white;
+            background-size: contain;
+        }
+        .leftbox{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            color: white;
+            /* align-items: center;
+            justify-content: center; */
+        }
+        .contentbox{
+            width: 75%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 65px;
+        }
+        h1{
+            font-size: 2.4rem;
+        }
+        .statsbox{
+            display: flex;
+            justify-content: space-between;
+        }
+        .number {
+        font-size: 1.7rem;
+        font-weight: bold;
+        }
+        .unit{
+            font-size: smaller;
+        }
+        .box .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        /* border-radius: 16px; */
+        background-color: rgba(36, 34, 34,0.85);
+        opacity: 0;
+        transition: all 2s linear 0.1s;}
+        .box:hover .overlay{
+            opacity: 1;
+            width: 100%
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="overlay"></div>
+            <div class="leftbox">
+                <div class="contentbox">
+                    <h1>
+                        Get insights that help your business grow
+                    </h1>
+                    <div class="descbox">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsum odit eaque accusantium totam repellendus minus sit. Consequuntur, deleniti dignissimos?
+                    </div>
+                    <div class="statsbox">
+                        <div>
+                            <div class="number">10K+</div>
+                            <div class="unit">Comments</div>
+                        </div>
+                        <div>
+                            <div class="number">214</div>
+                            <div class="unit">Paid Users</div>
+                        </div>
+                        <div>
+                            <div class="number">12M+</div>
+                            <div class="unit">Views</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="rightbox">
+    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

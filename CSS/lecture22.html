@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border:2px solid black;
+            height: 650px;
+            /* margin: 2px;
+            padding: 2px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h2{
+            text-shadow: 3px 3px 1px white, 5px 5px 1px green ;
+            font: 2em Georgia, serif;
+        }
+        .box{
+            --primary-color:brown;
+            --custom-width:330px;
+            background-color: aquamarine;
+            height: var(--custom-width);
+            width: 330px;
+            border:3px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            box-shadow: 10px 10px 8px grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logoCode.png" alt="logo" width="100px">
+            <h2>Welcome to CodeHelp</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptates eveniet animi? Quisquam, ipsam id alias consequuntur saepe quibusdam, libero accusantium vitae ea cumque repudiandae?</p>
+        </div>
+    </div>
+</body>
+</html>
