@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Job Application</h1>
+    <label for="Name">Name:</label>
+    <br/>
+    <br>
+    <input type="text" name="Name" id="Name">
+    <br>
+    <label for="Email">Email:</label>
+    <br/>
+    <br>
+    <input type="text" name="Email" id="Email">
+    <br>
+    <label for="Phone">Phone:</label>
+    <br/>
+    <br>
+    <input type="text" name="Phone" id="Phone">
+    <br/>
+    <label for="Resume">Resume:</label>
+    <br/>
+    <br>
+    <input type="file" name="Resume" id="Resume">
+    <br/>
+    <label for="yr">Experience:</label>
+    <br/>
+    <br>
+    <input type="number" name="yr" id="yr" min="0" max="50" value="0">
+    <fieldset style = "border:  2px solid black;">
+    <legend style=" font-weight: bold;font-size: 1.2em; ">Skills:</legend>
+    <input type="checkbox" id="HTML">
+    <br>
+    <label for="HTML">HTML</label>
+    <br/>
+    <br/>
+    <input type="checkbox" id="CSS">
+    <br>
+    <label for="CSS">CSS</label>
+    <br/>
+    <br/>
+    <input type="checkbox" id="JavaScript">
+    <br>
+    <label for="JavaScript">JavaScript</label>
+    </fieldset>
+    <label for="HighestEducation">Highest Education:</label>
+    <br>
+    <br>
+    <select name="HighestEducation" id="HighestEducation">
+        <option value="" disabled selected>Select an option</option>
+        <option value="High School">High School</option>
+        <option value="College">College</option>
+        <option value="Primary School">Primary School</option>
+        <option value="Masters">Masters</option>
+    </select>
+    <br>
+    <label for="">Availability:</label>
+    <br/>
+    <br/>
+    <input type="radio" id="FullTime" name="Availability">
+    <br>
+    <label for="FullTime">Full-Time</label>
+    <br/>
+    <br/>
+    <input type="radio" id="PartTime" name="Availability">
+    <br>
+    <label for="PartTime">Part-Time</label>
+    <br/>
+    <label for="Additional">Additional Comments:</label>
+    <br>
+    <textarea name="Comments" id="Additional" rows="4" cols="40"></textarea>
+    <button>Submit Application</button>
+</body>
+</html>
