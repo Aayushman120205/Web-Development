@@ -1,2 +1,2 @@
 # Wed Development
-Code to develop skills in javascript
+Code to develop skills in web dev
