@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Or Js</h1>
+    <button id="Start">Start</button>
+    <button id="Stop">Stop</button>
+</body>
+<script>
+    let timeTravel = null
+    const clock = function(str){
+        const now = new Date()
+        console.log(str,now.toLocaleTimeString())
+    }
+    document.querySelector('#Start').addEventListener('click',function(){
+        timeTravel = setInterval(clock,1000,'Aayushman')
+    })
+    document.querySelector('#Stop').addEventListener('click',function(){
+        clearInterval(timeTravel)
+    })
+</script>
+</html>
