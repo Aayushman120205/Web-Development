@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XHR HTTP REQUEST</title>
+    <style>
+    table {
+      /* width: 100%; */
+      border-collapse: collapse;
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #2d2d2d;
+    }
+    code {
+      background-color: #2d2d2d;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>State</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td><code>UNSENT</code></td>
+      <td>Client has been created. <code>open()</code> not called yet.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><code>OPENED</code></td>
+      <td><code>open()</code> has been called.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><code>HEADERS_RECEIVED</code></td>
+      <td><code>send()</code> has been called, and headers and status are available.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><code>LOADING</code></td>
+      <td>Downloading; <code>responseText</code> holds partial data.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><code>DONE</code></td>
+      <td>The operation is complete.</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+<script>
+    const requesturl = 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requesturl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState)
+        if(xhr.readyState === 4){
+            const response = JSON.parse(this.responseText)
+            console.log(response.followers);
+        }
+    }
+    xhr.send()
+</script>
+</html>
