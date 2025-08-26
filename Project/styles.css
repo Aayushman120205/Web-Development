@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    height: 100vh;
+    background-image: linear-gradient( 111.1deg,  rgba(69,150,164,1) 2.5%, rgba(17,20,34,1) 100.3% );
+}
+#Card1{
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+#Card2{
+    background:linear-gradient( 86.9deg,  rgba(253,189,38,1) 28.3%, rgba(253,109,38,1) 118.2% );    ;
+}
+#Card3{
+    background: linear-gradient( 75.1deg,  rgba(34,126,34,1) 6%, rgba(99,226,17,1) 84.3% );
+}
+#Card4{
+    background: radial-gradient( circle farthest-corner at -5.6% -6.8%,  rgba(103,49,145,1) 37.3%, rgba(50,0,129,1) 73.5% );
+}
+.cards{
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  display:flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1rem;
+  width: 30vh;
+  height: 14vh;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: relative;
+  transition: all 0.3s linear 0s;
+}
+.cards:hover{
+    width: 32vh;
+    height: 16vh;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgba(36, 34, 34,0.5);
+    opacity: 0;
+    border-radius: 10px;
+    transition: all .5s linear 0s;}
+
+#Card1:hover .overlay{
+    opacity: 1;
+    width: 100%
+}
+#Card2:hover .overlay{
+    opacity: 1;
+    width: 100%
+}
+#Card3:hover .overlay{
+    opacity: 1;
+    width: 100%
+}
+#Card4:hover .overlay{
+    opacity: 1;
+    width: 100%
+}
+
+
+
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.input{
+    padding: 3.5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.pencil{
+    height:5vh;
+    width: 5vh;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Graph - part starts here */
+
+.graph-analysis{
+    display: flex;
+    justify-content: space-around;
+    height: 35vh;
+}
+
+.graph{
+    height: 100%;
+    width: 45vw;
+}
+.graphBox{
+    position: relative;
+    padding: 7px;
+}
+.over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    /* width: 100%;
+    background-color: rgba(36, 34, 34,0.5); */
+    opacity: 0;
+    /* border-radius: 10px; */
+    transition: all .5s linear 0s;
+}
+#G1:hover .over{
+    opacity: 1;
+    height: 10%;
+    
+}
+#G1:hover{
+    border: 1px solid beige;
+    border-radius: 12px;
+    box-shadow: 0 0 10px black;
+}
+
+#G2:hover .over{
+    opacity: 1;
+    height: 10%;
+}
+#G2:hover{
+    border: 1px solid beige;
+    border-radius: 12px;
+    box-shadow: 0 0 10px black;
+}
+/* Pie Charts  starts here */
+
+.pieChart-analysis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* height: 50vh; */
+    margin-bottom:10px;
+}
+.pieChart:hover {
+    border: 1px white solid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px white;
+    
+}
